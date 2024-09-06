@@ -10,6 +10,6 @@ import Foundation
 
 public class ContentViewModel {
     public func saveString(myString: String) async throws {
-        try await SaveString().execute(myString: myString)
+        try await SaveString().store(myString: myString)
     }
 }

@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     private var viewModel = ContentViewModel()
     @State private var text: String = ""
-    @State private var showAlert: Bool = false
+    @State private var showErrorAlert: Bool = false
+    @State private var showSuccessAlert: Bool = false
 
     var body: some View {
         VStack {
@@ -22,12 +23,15 @@ struct ContentView: View {
                     if !text.isEmpty {
                         do {
                             try await viewModel.saveString(myString: text)
+                            showSuccessAlert = true
                         } catch {
-                            showAlert = true
+                            showErrorAlert = true
                         }
                     }
                 }
-            }.alert("Error", isPresented: $showAlert) {
+            }.alert("Error", isPresented: $showErrorAlert) {
+                Button("OK") {}
+            }.alert("Success", isPresented: $showSuccessAlert) {
                 Button("OK") {}
             }
         }

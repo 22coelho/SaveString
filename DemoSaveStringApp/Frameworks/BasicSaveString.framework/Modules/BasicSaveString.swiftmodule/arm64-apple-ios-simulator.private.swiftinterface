@@ -8,12 +8,13 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 public class SaveString {
   public init()
+  public init(service: any BasicSaveString.SaveStringService)
   #if compiler(>=5.3) && $AsyncAwait
-  public func execute(myString: Swift.String) async throws
+  public func store(myString: Swift.String) async throws
   #endif
   @objc deinit
 }
-public protocol SaveStringServiceProtocol {
+public protocol SaveStringService {
   #if compiler(>=5.3) && $AsyncAwait
   func execute(myString: Swift.String) async throws
   #endif

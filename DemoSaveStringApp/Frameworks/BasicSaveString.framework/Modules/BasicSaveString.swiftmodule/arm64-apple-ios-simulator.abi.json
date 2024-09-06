@@ -26,20 +26,19 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SaveStringServiceProtocol",
-                "printedName": "any BasicSaveString.SaveStringServiceProtocol",
-                "usr": "s:15BasicSaveString0bC15ServiceProtocolP"
+                "name": "SaveStringService",
+                "printedName": "any BasicSaveString.SaveStringService",
+                "usr": "s:15BasicSaveString0bC7ServiceP"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15BasicSaveString0bC0C7serviceAA0bC15ServiceProtocol_pvp",
-            "mangledName": "$s15BasicSaveString0bC0C7serviceAA0bC15ServiceProtocol_pvp",
+            "usr": "s:15BasicSaveString0bC0C7serviceAA0bC7Service_pvp",
+            "mangledName": "$s15BasicSaveString0bC0C7serviceAA0bC7Service_pvp",
             "moduleName": "BasicSaveString",
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
+              "HasStorage"
             ],
             "hasStorage": true,
             "accessors": [
@@ -50,14 +49,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "SaveStringServiceProtocol",
-                    "printedName": "any BasicSaveString.SaveStringServiceProtocol",
-                    "usr": "s:15BasicSaveString0bC15ServiceProtocolP"
+                    "name": "SaveStringService",
+                    "printedName": "any BasicSaveString.SaveStringService",
+                    "usr": "s:15BasicSaveString0bC7ServiceP"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15BasicSaveString0bC0C7serviceAA0bC15ServiceProtocol_pvg",
-                "mangledName": "$s15BasicSaveString0bC0C7serviceAA0bC15ServiceProtocol_pvg",
+                "usr": "s:15BasicSaveString0bC0C7serviceAA0bC7Service_pvg",
+                "mangledName": "$s15BasicSaveString0bC0C7serviceAA0bC7Service_pvg",
                 "moduleName": "BasicSaveString",
                 "implicit": true,
                 "isOpen": true,
@@ -75,14 +74,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "SaveStringServiceProtocol",
-                    "printedName": "any BasicSaveString.SaveStringServiceProtocol",
-                    "usr": "s:15BasicSaveString0bC15ServiceProtocolP"
+                    "name": "SaveStringService",
+                    "printedName": "any BasicSaveString.SaveStringService",
+                    "usr": "s:15BasicSaveString0bC7ServiceP"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15BasicSaveString0bC0C7serviceAA0bC15ServiceProtocol_pvs",
-                "mangledName": "$s15BasicSaveString0bC0C7serviceAA0bC15ServiceProtocol_pvs",
+                "usr": "s:15BasicSaveString0bC0C7serviceAA0bC7Service_pvs",
+                "mangledName": "$s15BasicSaveString0bC0C7serviceAA0bC7Service_pvs",
                 "moduleName": "BasicSaveString",
                 "implicit": true,
                 "isOpen": true,
@@ -100,8 +99,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15BasicSaveString0bC0C7serviceAA0bC15ServiceProtocol_pvM",
-                "mangledName": "$s15BasicSaveString0bC0C7serviceAA0bC15ServiceProtocol_pvM",
+                "usr": "s:15BasicSaveString0bC0C7serviceAA0bC7Service_pvM",
+                "mangledName": "$s15BasicSaveString0bC0C7serviceAA0bC7Service_pvM",
                 "moduleName": "BasicSaveString",
                 "implicit": true,
                 "isOpen": true,
@@ -131,9 +130,37 @@
             "init_kind": "Designated"
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(service:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SaveString",
+                "printedName": "BasicSaveString.SaveString",
+                "usr": "s:15BasicSaveString0bC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SaveStringService",
+                "printedName": "any BasicSaveString.SaveStringService",
+                "usr": "s:15BasicSaveString0bC7ServiceP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15BasicSaveString0bC0C7serviceAcA0bC7Service_p_tcfc",
+            "mangledName": "$s15BasicSaveString0bC0C7serviceAcA0bC7Service_p_tcfc",
+            "moduleName": "BasicSaveString",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
-            "name": "execute",
-            "printedName": "execute(myString:)",
+            "name": "store",
+            "printedName": "store(myString:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -148,8 +175,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15BasicSaveString0bC0C7execute02myC0ySS_tYaKF",
-            "mangledName": "$s15BasicSaveString0bC0C7execute02myC0ySS_tYaKF",
+            "usr": "s:15BasicSaveString0bC0C5store02myC0ySS_tYaKF",
+            "mangledName": "$s15BasicSaveString0bC0C5store02myC0ySS_tYaKF",
             "moduleName": "BasicSaveString",
             "isOpen": true,
             "declAttributes": [
@@ -236,10 +263,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "SaveStringServiceProtocol",
-            "printedName": "SaveStringServiceProtocol",
-            "usr": "s:15BasicSaveString0bC15ServiceProtocolP",
-            "mangledName": "$s15BasicSaveString0bC15ServiceProtocolP"
+            "name": "SaveStringService",
+            "printedName": "SaveStringService",
+            "usr": "s:15BasicSaveString0bC7ServiceP",
+            "mangledName": "$s15BasicSaveString0bC7ServiceP"
           }
         ]
       },
@@ -431,8 +458,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SaveStringServiceProtocol",
-        "printedName": "SaveStringServiceProtocol",
+        "name": "SaveStringService",
+        "printedName": "SaveStringService",
         "children": [
           {
             "kind": "Function",
@@ -452,23 +479,20 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15BasicSaveString0bC15ServiceProtocolP7execute02myC0ySS_tYaKF",
-            "mangledName": "$s15BasicSaveString0bC15ServiceProtocolP7execute02myC0ySS_tYaKF",
+            "usr": "s:15BasicSaveString0bC7ServiceP7execute02myC0ySS_tYaKF",
+            "mangledName": "$s15BasicSaveString0bC7ServiceP7execute02myC0ySS_tYaKF",
             "moduleName": "BasicSaveString",
-            "genericSig": "<τ_0_0 where τ_0_0 : BasicSaveString.SaveStringServiceProtocol>",
-            "sugared_genericSig": "<Self where Self : BasicSaveString.SaveStringServiceProtocol>",
+            "genericSig": "<τ_0_0 where τ_0_0 : BasicSaveString.SaveStringService>",
+            "sugared_genericSig": "<Self where Self : BasicSaveString.SaveStringService>",
             "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
             "throwing": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:15BasicSaveString0bC15ServiceProtocolP",
-        "mangledName": "$s15BasicSaveString0bC15ServiceProtocolP",
+        "usr": "s:15BasicSaveString0bC7ServiceP",
+        "mangledName": "$s15BasicSaveString0bC7ServiceP",
         "moduleName": "BasicSaveString",
         "declAttributes": [
           "AccessControl"
