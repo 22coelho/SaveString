@@ -485,6 +485,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : BasicSaveString.SaveStringService>",
             "sugared_genericSig": "<Self where Self : BasicSaveString.SaveStringService>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "throwing": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
